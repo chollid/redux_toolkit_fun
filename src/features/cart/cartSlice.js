@@ -39,6 +39,9 @@ export const getCartItems = createAsyncThunk(
 const cartSlice = createSlice({
   name: "cart",
   initialState,
+  // reducers are synchronous
+  // extraReducers are asynchronous
+  // extraReducers are called when the async thunk is dispatched
   reducers: {
     clearCart: (state) => {
       state.cartItems = [];
