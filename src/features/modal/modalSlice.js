@@ -5,8 +5,15 @@ const initialState = {
 };
 
 const modalSlice = createSlice({
+  // name of the slice
+  // this is the name of the slice in the store
   name: "modal",
+  // initial state of the slice
   initialState,
+  // reducers are synchronous
+  // extraReducers are asynchronous
+  // extraReducers are called when the async thunk is dispatched
+  // reducers are called when the action is dispatched
   reducers: {
     openModal: (state, action) => {
       state.isOpen = true;
