@@ -3,6 +3,10 @@ import { removeItem, increase, decrease } from "../features/cart/cartSlice";
 import { useDispatch } from "react-redux";
 
 const CartItem = ({ id, img, title, price, amount }) => {
+  // dispatch is a function that will send an action to the store
+  // an action is an object that has a type property
+  // the type property is a string that describes what we want to do
+  // the type property is required
   const dispatch = useDispatch();
 
   return (
